@@ -10,13 +10,16 @@
 Kevin Cummings<br>
 **Github UN:** [KevinCummings0001](https://github.com/KevinCummings0001)<br>
 
+Jason Doze<br>
+**Github UN:** [Jason-Doze](https://github.com/Jason-Doze)<br>
+
 La'Tonia Mertica Sheppard Walker<br>
 **Github UN:** [LaTonia-Mertica](https://github.com/LaTonia-Mertica)<br>
 
 <br>
 
 ### **GENERAL SETUP INSTRUCTIONS** 
-#### <p style="text-align: left">*we recommend you confirm steps outlined below before use*</p>
+#### <p style="text-align: left">*we recommend you confirm/test steps outlined below - or elsewhere - before use ... it's for your own code safety*</p>
 
 <br>
 
@@ -31,7 +34,7 @@ La'Tonia Mertica Sheppard Walker<br>
     2b. PC aka Windows Users run *django-env* \ *Scripts* \ *activate.bat* without spaces
 
 3. Execute Run Server Command<br>
-    3a. Mac aka BASH/ZSH **and** PC aka Windows Users run *python manage.py runserver* from app level - which is the same level within the project that contains the manage.py file/utility
+    3a. Mac aka BASH/ZSH **and** PC aka Windows Users run *python `manage.py` runserver* from app level - which is the same level within the project that contains the `manage.py` file/utility to start Django server (more info below in the run django application instructions)
 
 ###### [learn more re: creating and activating virtual environments](https://docs.python.org/3/library/venv.html)
 
@@ -39,30 +42,34 @@ La'Tonia Mertica Sheppard Walker<br>
 
 **USE PIP TO INSTALL PROJECT DEPENDENCIES:**<br>
 1. run *pip install django* to begin installation
-2. run *pip freeze > requirements.txt*
+2. run *pip freeze > requirements.txt*<br>
+    2a. this command creates a file called *requirements.txt* while populating the file with dependencies resulting from the install command in step 1 above. from the command line aka terminal run *cat requirements.txt* to view dependencies listed in the file 
+
+**note:** pip is the standard package manager for python. [visit python package index to learn more about packages](https://pypi.org/). the command *pip install* must be followed by the package you want to install. the command can be run to install the package with or without its dependencies
+
+###### [learn more re: pip install](https://pip.pypa.io/en/stable/cli/pip_install/) 
 
 ###### [learn more re: using pip to install project dependencies](https://stackoverflow.com/questions/53925660/installing-python-dependencies-locally-in-project)
 
 <br>
 
 **RUN A DJANGO APPLICATION:**<br>
-1. You must use the manage.py file/utility to run the server. From the Command Line/Terminal cd to the level where the manage.py file.utility lives. Run the command *python manage.py runserver*. You will know the command was successful when you see the following message (or something similar):
+1. You must use the `manage.py` file/utility to run the server. From the command line/terminal cd to the level where the `manage.py` file/utility lives. Run the command *python `manage.py` runserver*. You will know the command was successful when you see the following message (or something similar):
 
 "Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
 You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
-Run 'python manage.py migrate' to apply them.
+Run 'python `manage.py` migrate' to apply them.
 May 17, 2019 - 16:09:28
 Django version 2.2.1, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
+Starting development server at `http://127.0.0.1:8000/`
 Quit the server with CONTROL-C.
 "
 
-**note:** the above message means the django application is running, you must visit the http://127.0.0.1:8000/ link to access the django application in browser. [the django welcome/homepage](/Users/latoniamerticasheppardwalker/Documents/JTC_Projects/nyc-guide-main/images/django-welcome-homepage.png) may look like an error or exception until you add url endpoints per your project into the browser. for example, http://127.0.0.1:8000/(insert your url endpoint here and remove the parenthese).
+**note:** the above message means the django application is running, you must visit the `http://127.0.0.1:8000/` link to access the django application in browser. [the django welcome/homepage](images/django-welcome-homepage.png) may look like an error or exception. this is until you add url endpoints per your project into the browser. for example, `http://127.0.0.1:8000`/(insert your url endpoint here without including the parentheses).
 
 <br>
 
 <img src="images/travel-g580df9aea_1920-courtesy-pixabay.jpg" alt="Virtual Global-Scape" title=" 'Travel' courtesy Pixabay" width="100%"/>
-
