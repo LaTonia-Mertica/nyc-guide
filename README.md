@@ -2,7 +2,7 @@
 
 ---
 
-#### <p style="text-align: center">*Virtual Tour of The New York City Area from Brooklyn to Staten Island*</p>
+#### <p style="text-align: center">*A Virtual Tour of The New York City Area from Brooklyn to Staten Island*</p>
 
 <br>
 
