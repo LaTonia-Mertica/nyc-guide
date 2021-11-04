@@ -27,7 +27,7 @@ La'Tonia Mertica Sheppard Walker<br>
 1. Execute VENV Command to Create<br>
     1a. Mac aka BASH/ZSH Users run *python3 -m venv /path/to/new/virtual/environment*<br>
     1b. PC aka Windows Users run *c:\>c:\Python35\python -m venv c:\path\to\myenv*<br>
-    **note:** basically you want to run python3 -m venv django-env 
+    **note:** basically you want to run python3 -m venv django-env or replace django-env appropriately
 
 2. Execute Activate Command<br>
     2a. MAC aka BASH/ZSH Users run *source django-env/bin/activate*<br>
@@ -41,9 +41,10 @@ La'Tonia Mertica Sheppard Walker<br>
 <br>
 
 **USE PIP TO INSTALL PROJECT DEPENDENCIES:**<br>
-1. run *pip install django* to begin installation
-2. run *pip freeze > requirements.txt*<br>
-    2a. this command creates a file called *requirements.txt* while populating the file with dependencies resulting from the install command in step 1 above. from the command line aka terminal run *cat requirements.txt* to view dependencies listed in the file 
+1. if installing after cloning a repo, run *pip install -r requirements.txt* to execute the command to read the requirements file and install everything in it
+2. if pip is already installed and want to install a package, run *pip install insertpackagenamehere*<br>
+    2a. next run *pip freeze > requirements.txt*<br>
+    2b. this command creates a file called *requirements.txt* while populating the file with dependencies resulting from the install command in step 1 above. from the command line aka terminal run *cat requirements.txt* to view dependencies listed in the file 
 
 **note:** pip is the standard package manager for python. [visit python package index to learn more about packages](https://pypi.org/). the command *pip install* must be followed by the package you want to install. the command can be run to install the package with or without its dependencies
 
