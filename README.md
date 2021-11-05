@@ -9,12 +9,15 @@
 #### **COLLABORATORS**
 Kevin Cummings<br>
 **Github UN:** [KevinCummings0001](https://github.com/KevinCummings0001)<br>
+*'Coding is the language of the future.'*
 
 Jason Doze<br>
 **Github UN:** [Jason-Doze](https://github.com/Jason-Doze)<br>
+*'Give a man a program, frustrate him for a day. Teach a man a program, frustrate him for a lifetime.'*
 
 La'Tonia Mertica Sheppard Walker<br>
 **Github UN:** [LaTonia-Mertica](https://github.com/LaTonia-Mertica)<br>
+*'Lean into the challenges of coding.'*
 
 <br>
 
