@@ -10,8 +10,11 @@ def borough(request, borough):
         return render(request=request, template_name='borough.html', context={ 'borough': borough, 'activities': boroughs[borough].keys() })
 
 # Create your views here.
-def activity():
-    pass
+def activity(request, borough, activity):
+    if request.method == 'GET':
+        return render(request=request, template_name='activity.html', context={ 'borough': borough, 'activity': activity, 'info': boroughs[borough][activity].keys() })
 
-def venue():
-    pass
+def venue(request, borough, activity):
+    if request.method == 'GET':
+        return render(request=request, template_name='venue.html', context={ 'borough': borough, 'venue': activity, 'info': boroughs[borough][activity][venue].keys() })
+  

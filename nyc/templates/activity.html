@@ -1,0 +1,8 @@
+<h1>Activity page {{activity}} </h1>
+<h1>Activity page {{activity}} </h1>
+
+<ul>
+    {% for activity in activites %}
+    <li><a href="{% url 'activity' activity %}">{{ activity|title }}</a></li>
+    {% endfor %}
+</ul>
