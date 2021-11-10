@@ -1,8 +1,7 @@
-<h1>Activity page {{activity}} </h1> 
-
+<h1>{{activity|title}} </h1> 
 
 <ul>
-    {% for item in venue %}
-    <li><a href="{% url 'venue'  venue %}">{{venue|title}}</a></li>
+    {% for venue in activities %}
+    <li><a href="{% url 'venue'  borough activity venue %}" style="text-decoration: none;">{{venue|title}}</a></li>
     {% endfor %}
 </ul>

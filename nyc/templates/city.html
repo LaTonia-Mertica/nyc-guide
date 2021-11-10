@@ -1,11 +1,11 @@
-<h1>New York City Guide</h1>
-<p>
+<h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-bottom: -11px;">New York City Guide</h1>
+<p style="text-align: center; font-style: italic;">
     Wondering about fun activities to do in the big city? Check out this
     directory of activities in each borough!
 </p>
 
 <ul>
     {% for borough in boroughs %}
-    <li><a href="{% url 'borough' borough %}">{{ borough|title }}</a></li>
+    <li><a href="{% url 'borough' borough %}" style="text-decoration: none;">{{ borough|title }}</a></li>
     {% endfor %}
 </ul>
