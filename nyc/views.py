@@ -16,4 +16,4 @@ def activity(request, borough, activity):
 
 def venue(request, borough, activity, venue):
     if request.method == 'GET':
-        return render(request=request, template_name='venue.html', context={ 'borough': borough, 'activity': activity, 'venue': venue, 'description': boroughs[borough][activity][venue].get('description', 'img_link') })
+        return render(request=request, template_name='venue.html', context={ 'borough': borough, 'activity': activity, 'venue': venue, 'description': boroughs[borough][activity][venue].get('description') })
